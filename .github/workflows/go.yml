@@ -39,6 +39,12 @@ jobs:
 
     - name: Build app
       run: go build -v main.go
+  
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: programa
+        path: main.exe
 
   docker:
     needs: build
