@@ -5,6 +5,12 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      HOST: localhost
+      DBPORT: 5432
+      DBUSER: root
+      DBPASSWORD: root
+      DBNAME: root
     strategy:
       matrix:
         go_version: ['1.18', '1.17', '>=1.18']
