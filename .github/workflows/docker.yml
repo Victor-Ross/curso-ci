@@ -25,4 +25,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: victorross:go_ci:${{ github.ref_name }}-2
+        tags: victorross:go-ci:${{ github.ref_name }}2
